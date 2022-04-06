@@ -7,5 +7,5 @@ The page contains some features, such as the auto-slider for the references.<br/
 Since common page builders are not able to display responsive webdesign<br/>
 with such accuracy, the page was written from scratch.
 
-The page can be viewed under the following [Link](https://wa6mzsqq5ykz1hdev7gumw.on.drv.tw/Studio42/ "Studio42").
+The page can be viewed under the following [Link](https://schmitzgoogledriveweblinks.on.drv.tw/Studio42/ "Studio42").
  
