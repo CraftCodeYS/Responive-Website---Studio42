@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="wf-sofiapro-n7-active wf-sofiapro-n3-active wf-sofiapro-n4-active wf-active">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo_white.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b89304458c.js" 
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.hislide.js" ></script>
+    <script src="js/albumDataObject.js"></script>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/reference.css">
+    <title>Studio 42</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home">
+            <img class="logo" src="img/logo_white.png" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#reference">REFERENCES</a>
+            <a href="#service">SERVICE</a>
+            <a href="#map">CONTACT</a>
+        </nav>
+        <button type="button" class="icon" onclick="resizeNavbar()"> 
+            <div></div>
+            <div></div>
+            <div></div> 
+        </button>
+    </header>
+    <script src="js/header.js"></script>
+    <!-- HOME -->
+    <div class="home" id="home">
+        <!-- SLIDESHOW -->
+        <div class="slideshow">
+            <div class="dot"></div>
+            <div class="slideshow-item">
+                <img src="img/studio1.jpg" alt="studio_1">
+                <div class="slideshow-item-text">
+                    <h3>Mixing-Console - Neve 88RS</h3>
+                    <p>
+                        Wie bei allem Equipment, ist unser Mixing-Console "Neve 88Rs" von hoher Qualität und liefert garantiert ab. Form und Funktionalität sind wichtig, genau wie Ästhetik. Daher bieten wir unseren Kunden eine unglaubliche Auswahl an qualitativ hochwertigen Instrumenten und Aufnahme-Equipment.
+                    </p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="img/studio2.jpg" alt="studio_2">
+                <div class="slideshow-item-text">
+                    <h3>Recording</h3>
+                    <p>
+                        Unsere Shure SM57 Mikrofone sind die besten, die auf dem Markt erhältlich sind und sind eine Bereicherung für jede Aufnahme-Session, egal welchen Stils oder welchen Genres. Wir bieten den Musikern nicht nur das allerbeste Equipment; unsere fachkundigen Mitarbeiter beraten Sie auch gerne darüber, wie sie es am gewinnbringendsten einsetzen können.
+                    </p>
+                </div>
+            </div>
+            <div class="slideshow-item">
+                <img src="img/studio3.jpg" alt="studio_3">
+                <div class="slideshow-item-text">
+                    <h3>Studio 2 - Mastering</h3>
+                    <p>
+                        Was auch immer Sie brauchen, um optimale Arbeit zu leisten, wir bei Studio42 führen Produktionen von Recording bis hin zum Mastering durch. Das Mastering in Studio 2 verleiht ihrer Produktion den letzten schliff.
+                        Hochwertige Monitore und leistungsstarkes Audio-Processing ermöglichen feine Unterschiede vorzunehmen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div class="about" id="about">
+        <div class="dot"></div>
+        <img src="img/hardware_1.jpg" alt="Hardware 1">
+        <div>
+            <div>
+                <h2>Hinter den Studiotüren</h2>
+                <h3>Nehmen Sie Ihre eigenen Sounds auf</h3>
+                <p>
+                    <nobr>
+                        Suchen Sie ein Studio, das komfortabel,
+                    </nobr>
+                    <nobr>
+                        bequem und voll mit toller Ausrüstung ist?
+                    </nobr><br/>
+                    <nobr>
+                        Dann hat das Studio42 alles was Sie brauchen.
+                    </nobr>
+                    <nobr>
+                        Bei uns bekommen Sie alles aus einer Hand.
+                    </nobr><br/>
+                </p>
+                <p>
+                    <nobr>
+                        Unsere Kunden haben Zugang zu allen Studiobereichen 
+                    </nobr>
+                    <nobr>
+                        und einer Reihe der besten Aufnahmegeräte,
+                    </nobr><br/>
+                    <nobr>
+                        die es gibt, wie Mischpulte, Computer, Mikrofone
+                    </nobr>
+                    <nobr>
+                        und mehr. Egal welcher Musikstil, 
+                    </nobr><br/>
+                    <nobr>
+                        unser professionelles Tonstudio wird 
+                    </nobr>
+                    <nobr>
+                        Ihren Sound zum Leben erwecken.
+                    </nobr><br/>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- REFERENCES -->
+    <div class="reference" id="reference">
+        <div class="background"></div>
+        <h2>Produktionen</h2>
+        <div class="slide hi-slide">
+            <div class="hi-prev"></div>
+            <ul id="slideList"></ul>
+            <div class="hi-next"></div>
+        </div>
+        <script src="js/albumData.js"></script>
+        <script type="application/javascript">
+            $('.slide').hiSlide();
+        </script>
+        <img src="img/hardware_4.jpg" alt="Hardware 3">
+    </div>
+    <!-- SERVICE -->
+    <div class="service" id="service">
+        <img src="img/hardware_2.jpg" alt="hardware_2">
+        <h2>Was können wir für Dich tun? </h2>
+        <div class="serType">
+            <div>
+                <div>
+                    <i class="serSym fas fa-drum"></i>
+                    <h3>RECORDING</h3>
+                </div>
+                <h6>
+                    In unseren Studios haben wir die besten akustischen Bedingungen.<br/>
+                    Unser kompetentes Team hat Erfahrung in jedem Musikgerne.<br/>
+                    Nicht zuletzt werden unser analoges Mischpult und hochwertige <br/> Mikrofone Ihnen die besten Ergebnisse liefern.
+                </h6>
+            </div>
+            <div>
+                <div>
+                    <i class="serSym far fa-file-audio"></i>
+                    <h3>EDITING</h3>
+                </div>
+                <h6>
+                    Erst das richtige Editing lässt die Produktion aufblühen.<br/>Deshalb bringen wir Kreativität und Rhythmus im Einklang.<br/>Dazu liefern unsere Mitarbeiter weitreichende Erfahrungen <br/>mit dem Umgang mit ProTools und probieren stehts neues aus.
+                </h6>
+            </div>
+            <div>
+                <div>
+                    <i class="serSym fas fa-sliders-h"></i>
+                    <h3>MIXING</h3>
+                </div>
+                <h6>
+                    Damit Musik einen starken und bleibenden Eindruck hinterlässt,<br/> muss die Produktion ausgewogen und spannend klingen. <br/>Um dies zu erreichen, müssen die einzelnen Tracks mit Feingefühl<br/> und Präzisionsarbeit abgemischt und bearbeitet werden.
+                </h6>
+            </div>
+            <div>
+                <div>
+                    <i class="serSym fas fa-compact-disc"></i>
+                    <h3>MASTERING</h3>
+                </div>
+                <h6>
+                    10% der Qualität einer Produktion macht das Mastering aus. <br/>Klingt nicht nach viel? Wenn Sie auf höchster Ebene Ihre Musik <br/>vertreiben wollen, ist das eine Menge. Jede Produktion wird so<br/>angepasst, dass diese auf dem Format das Maximum rausholt.
+                </h6>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="map" id="map">
+        <img src="img/map.png" alt="map">
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="contact">
+            <div class="info adress">
+                <div>
+                    <i class="symInfo fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                    <h4>Studio42<br> MASTERING GmbH</h4>
+                    <h5>Komödienstr. 48</h5>
+                    <h5>50667 Cologne</h5>
+                    <h5>Germany</h5>
+                </div>
+            </div>
+            <div class="info phone">
+                <div>
+                    <i class="symInfo fas fa-phone"></i>
+                </div>
+                <div>
+                    <h4>Phone</h4>
+                    <h5 style="color: #41B6B6">+49 211 49 39 840</h5>
+                </div>
+            </div>
+            <div class="info email">
+                <div>
+                    <i class="symInfo far fa-envelope"></i>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <h5 style="color: #41B6B6">ms@studio42.de</h5>
+                </div>
+            </div>
+        </div>
+        <div class="condition">
+            <a onclick="resizeInfo()">Impressum/Imprint</button>
+            <a onclick="resizeInfo()">AGB/General terms and conditions</a>
+            <a onclick="resizeInfo()">Privacy policy</a>
+        </div>
+        <div class="impressum">
+            <h4>Impressum</h5>
+            <h5>Studio42 MASTERING GmbH<br/>
+                Max Mustermann
+            </h5>
+            <p>
+                Komödienstr. 48<br/>
+                50667 Cologne, Germany
+            </p>
+            <p>
+                Steuernummer: xxx / xxx / xxx<br/>
+                Handelsregistereintrag: HRB 40612<br/>
+                Gerichtsstand: Köln<br/><br/><br/>
+            </p>
+            <h4>General Terms and Conditions of <br/>
+                Studio42 Mastering GmbH</h4>
+            <h5>from 13.02.2013<br/></h5>
+            <div class="infoText">
+                <p>
+                1. Validity of the General Terms and Conditions<br/>
+                monoposto Mastering GmbH (hereinafter called "monoposto") offers its services and deliveries subject to the following terms and conditions, which are part of all contracts concluded with monoposto. Any purchasing and business conditions of the Client, even if not expressly challenged, are only binding if they are confirmed in writing by monoposto within the contract. <br/><br/>
+                
+                2. Client<br/>
+                All services, deliveries and postage costs shall be at the expense and risk of the Client. The Client is the person who places the order - in writing or verbally - even if the invoice is submitted to a third party at his request, which means he is fully liable for the invoiced amount alongside the third party. If the contract is on behalf of or to the account of a third party, the Client shall expressly draw attention to this in the order. If the party specified by the Client to receive the invoice is unwilling or unable to pay the bill, the Client is fully liable for the services provided. There is no obligation on behalf of the Contractor to check the right of the Client to place the order on behalf of a third party.<br/><br/>
+                
+                3. Copyright clearance of protected works<br/>
+                If protected works, music or language are utilized in the Client's order, the clearance of all possible rights of third parties is the responsibility of the Client. monoposto is not required to ascertain to what extent the content of the ordered work may violate any law. In such a case, the Client is liable for all resulting damages or detriment. GEMA rights are not transferable.<br/><br/>
+                
+                4. Default of payment<br/>
+                If the Client is in arrears with the payment of partial or interim invoices or if a significant deterioration occurs in its financial circumstances after the conclusion of a contract, monoposto is entitled to halt further processing of the order until payment or securement of the payment has occurred.<br/><br/>
+                
+                5. Liability for un-retrieved sound and image material<br/>
+                Liability for un-retrieved sound and image material is accepted only for the material value of the storage medium, and only for a maximum period of 3 months after the issue of an invoice.<br/><br/>
+                
+                6. Insurance of sound and image recordings<br/>
+                If the Client orders the processing, presentation, etc. of irreplaceable or difficult to replace sound and video recordings, the Client is liable for the risk or if necessary the conclusion of an insurance policy beyond the material value of the physical medium, as well as the creation of backups and safety copies.<br/><br/>
+                
+                7. Complaints related to delivery via external equipment<br/>
+                Complaints arising after delivery through reproduction on external equipment can only be recognized if gross errors are determined on behalf of the Contractor in relation to the usual industry standards, requirements, etc.<br/><br/>
+                
+                8. Mediating activities<br/>
+                Mediating activities, such as acceptance and submission of deliveries to and from film laboratories, post and rail expedition, arranging of hotels, speakers, performers, etc. are always in the name of and on behalf of the Client unless they are expressly covered by a production order, even if no explicit reference thereto has been made by the Contractor. The Contractor assumes no liability or warranties for such mediating activities.<br/><br/>
+                
+                9. Third-party services<br/>
+                If third-party services are required in the course of implementing an order, i.e. services that are not feasible with the studio's own equipment and staff, the Contractor is not responsible for the quality, timeliness and cost of those services. We accept no liability in case of delays arising from third-party services, pressing plants, etc.<br/><br/>
+                
+                10. Shipping and transportation of material<br/>
+                Shipment and transportation of material of all kinds occurs to the account of and at the risk of the Client. Packaging is done at our discretion.
+                
+                11. Place of jurisdiction<br/>
+                The place of jurisdiction and fulfillment is Dusseldorf.<br/><br/>
+                
+                12. Severability clause<br/>
+                If any provision of the contract, including this provision, is invalid, the validity of the remaining provisions shall not be affected.<br/><br/>
+                </p>
+            </div>
+            <br/><br/>
+            <h4>Datenschutzerklärung</h4>
+            <br/>
+            <div class="infoText">
+                <p>
+                1. Geltung der allgemeinen Geschäftsbedingungen<br/>
+                Die monoposto Mastering GmbH (nachfolgend "monoposto" genannt) erbringt ihre Leistungen und Lieferungen ausschließlich auf Grundlage dieser allgemeinen Geschäftsbedingungen, die Bestandteil sämtlicher mit monoposto geschlossener Verträge sind und werden. Einkaufs- und Geschäftsbedingungen des Kunden sind, auch ohne dass ihnen ausdrücklich widersprochen wird, nur dann verbindlich, wenn sie für den jeweiligen Vertrag von monoposto schriftlich anerkannt wurden.<br/><br/>
+            
+                2. Auftraggeber<br/>
+                Alle Leistungen, Lieferungen, Zu- und Rücksendungen erfolgen auf Rechnung und Gefahr des Auftraggebers. Auftraggeber ist, wer die Durchführung des Auftrags - schriftlich oder mündlich - veranlasst hat, auch wenn die Erteilung der Rechnung auf seinen Wunsch an einen Dritten erfolgt, d.h. er haftet voll neben dem Dritten für den Rechnungsbetrag. Erfolgt die Auftragserteilung im Namen und auf Rechnung eines Dritten, so ist der Auftragnehmer bei der Auftragserteilung hierauf ausdrücklich hinzuweisen. Ist der vom Kunden genannte Rechnungsempfänger nicht willens oder nicht in der Lage, die Rechnung zu übernehmen, so haftet der Kunde in vollem Umfang für die erbrachte Leistung. Es besteht für den Auftragnehmer keine Verpflichtung, die Befugnis des Auftragübermittlers zu überprüfen.<br/><br/>
+            
+                3. Klärung der Urheberrechtslage bei geschützten Werken<br/>
+                Werden innerhalb der Aufträge auf Kundenwunsch geschützte Werke, Musik oder Sprache verwendet, so obliegt die Klärung aller etwaigen Rechte Dritter dem Auftraggeber. Der Auftragnehmer ist nicht verpflichtet nachzuprüfen, inwieweit der Inhalt bestellter Arbeiten gegen gesetzliche Vorschriften verstößt. Ist dies der Fall, haftet der Auftraggeber für alle daraus entstehenden Nachteile oder Schäden. GEMA Rechte sind nicht übertragbar.<br/><br/>
+            
+                4. Zahlungsverzug<br/>
+                Befindet sich der Kunde mit der Bezahlung von Teil- oder Abschlagsrechnungen im Verzug oder tritt nach Vertragsschluss eine wesentliche Verschlechterung in seinen Vermögensverhältnissen ein, ist monoposto berechtigt, die weitere Bearbeitung des Auftrags einzustellen, bis Zahlung oder Sicherstellung der Zahlung erfolgt ist.<br/><br/>
+            
+                5. Haftung für zurückgebliebenes Ton- und Bildmaterial<br/>
+                Haftung für zurückgebliebenes Ton- und Bildmaterial kann nur bis zum Materialwert des Trägermaterials und nur bis zur Höchstdauer von 3 Monaten nach Rechnungsstellung übernommen werden.<br/><br/>
+            
+                6. Versicherung von Ton- und Bildaufzeichnungen<br/>
+                Überlässt der Auftraggeber zu Bearbeitung, Vorführung o.ä. unwiederbringliche oder schwer ersetzbare Ton- und Bildaufzeichnungen, so liegt das Risiko, ggfs. auch der Abschluss einer Versicherung über den Materialwert hinaus und auch die Veranlassung der Herstellung von Sicherheitskopien beim Auftraggeber.<br/><br/>
+            
+                7. Beanstandungen nach Lieferung auf fremden Apparaturen<br/>
+                Beanstandungen, die sich nach Lieferung durch Abspielen auf fremden Apparaturen ergeben, können nur anerkannt werden, wenn dem Auftragnehmer grobe Fehler gegenüber den branchenüblichen Forderungen, Normen etc. nachweisbar sind.<br/><br/>
+            
+                8. Vermittelnde Tätigkeiten<br/>
+                Vermittelnde Tätigkeiten, wie z.B. Annahme und Abgabe von Lieferungen von und zu den Kopierwerken, Post- und Bahnexpeditionen, Vermittlung von Hotels, Sprechern, Darstellern etc. erfolgen, wenn sie nicht ausdrücklich Gegenstand eines Produktions- oder Berarbeitungsauftrages sind, stets im Namen und auf Rechnung des Auftraggebers, auch wenn hierauf von Seiten des Auftragnehmers nicht ausdrücklich hingewiesen wird. Für solche vermittelnden Tätigkeiten übernimmt der Auftragnehmer keinerlei Haftung und Gewähr.<br/><br/>
+            
+                9. Fremdleistungen<br/>
+                Sind im Verlaufe einer Auftragsdurchführung Fremdleistungen erforderlich, d.h. Leistungen, die nicht mit den eigenen Geräten und dem eigenen Personal des Studios durchführbar sind, so ist der Auftragnehmer grundsätzlich nicht für Qualität, Pünktlichkeit und Kosten dieser Leistungen verantwortlich zu machen. Bei Verzögerungen, die durch Fremdleistungs-Betriebe, Kopierwerke etc. entstehen, übernehmen wir keinerlei Haftung.<br/><br/>
+            
+                10. Versand und Transport von Material<br/>
+                Versendung und Transport von Material aller Art erfolgt auf Rechnung und Gefahr des Auftraggebers. Die Verpackung erfolgt nach unserem Ermessen.<br/><br/>
+            
+                11. Gerichtsstand, Erfüllungsort<br/>
+                Gerichtsstand und Erfüllungsort sind Düsseldorf.<br/><br/>
+            
+                12. Salvatorische Klausel<br/>
+                Ist eine Bestimmung des Vertrages einschließlich dieser Bestimmungen unwirksam, so wird die Wirksamkeit der übrigen Bestimmungen dadurch nicht berührt.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
