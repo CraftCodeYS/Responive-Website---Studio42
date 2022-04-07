@@ -1,4 +1,4 @@
-# Responive-Website Studio42
+# Responive Website Studio42
 ## A responsive website for a fictitious music studio
 
 This website was created with the aim of making maximum use of responsive web design.<br/>
